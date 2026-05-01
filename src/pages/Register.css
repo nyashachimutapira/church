@@ -1,0 +1,127 @@
+.register-page {
+  padding-top: 120px;
+}
+
+.register-container {
+  max-width: 800px;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.register-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.register-subtitle {
+  color: var(--text-secondary);
+}
+
+.register-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.register-label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.register-label-icon {
+  color: var(--accent-gold);
+}
+
+.register-interest-fieldset {
+  border: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.register-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.register-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.register-checkbox-input {
+  accent-color: var(--accent-gold);
+}
+
+.register-submit-row {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.register-submit-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+.register-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.register-error {
+  color: #ff7d7d;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.register-help-text {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.register-success-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.register-success-container {
+  text-align: center;
+}
+
+.register-accent-icon {
+  color: var(--accent-gold);
+}
+
+.register-success-icon {
+  margin-bottom: 2rem;
+}
+
+.register-success-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.register-success-text {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+@media (max-width: 700px) {
+  .register-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

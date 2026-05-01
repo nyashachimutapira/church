@@ -1,0 +1,276 @@
+/* Give Page Styles */
+
+.give-page {
+  padding-top: 120px;
+}
+
+.give-hero {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.give-title {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.give-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.give-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Left Card */
+.give-card-title {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.give-accent-icon {
+  color: var(--accent-gold);
+}
+
+.give-category-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.give-field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.category-btn {
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: var(--accent-gold);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.category-btn:hover {
+  border-color: var(--accent-gold);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.category-btn--active {
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border-color: var(--accent-gold);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: inherit;
+}
+
+.give-amount-group {
+  margin-top: 2rem;
+}
+
+.give-amount-wrapper {
+  position: relative;
+}
+
+.give-currency-symbol {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+
+.give-amount-input {
+  padding-left: 2.5rem !important;
+}
+
+.give-methods-label {
+  font-size: 0.85rem !important;
+  margin: 0;
+}
+
+.payment-methods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.payment-badge {
+  background: rgba(212, 175, 55, 0.1);
+  color: var(--accent-gold);
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  font-weight: 500;
+}
+
+.give-cta {
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.give-security-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.give-captcha-group {
+  margin-top: 1.25rem;
+}
+
+.give-intent-btn {
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+.give-reference-text {
+  margin-top: 0.75rem;
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+}
+
+.give-error-text {
+  margin-top: 0.5rem;
+  color: #ff7d7d;
+  font-size: 0.9rem;
+}
+
+.give-help-text {
+  margin-top: 0.25rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.give-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.give-security-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Right QR Card */
+.give-qr-card {
+  text-align: center;
+  padding: 3rem;
+}
+
+.give-qr-icon {
+  margin-bottom: 1.5rem;
+}
+
+.give-qr-title {
+  margin-bottom: 1rem;
+}
+
+.give-qr-desc {
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+}
+
+.give-qr-wrapper {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  display: inline-block;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+}
+
+.give-scan-label-wrapper {
+  margin-top: 2rem;
+}
+
+.scan-badge {
+  background: #FF3D00;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.give-paynow-url {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.give-notice {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+}
+
+.give-notice-icon {
+  flex-shrink: 0;
+}
+
+.give-notice-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.give-notice-text {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .give-title {
+    font-size: 2.5rem;
+  }
+
+  .give-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
