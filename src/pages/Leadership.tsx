@@ -52,7 +52,7 @@ const leadership: { pastors: Leader[]; founders: Leader[]; executives: Leader[] 
       imageSrc: execJosephProfile,
     },
     {
-      name: "Pastor Nyasha Miriam Guti",
+      name: "Apostle Nyasha Miriam Guti",
       role: "Executive Member of the Travelling Teachers Ministry",
       description: `Holds a B.Sc. Degree in Computer Science (UZ); and a Master of Science Degree in Strategic Management (CUT). She also holds a Diploma in Microfinance Management; a Diploma from AMFCC, as well as a Bachelor of Theology Degree. A well-travelled and a seasoned teacher of the Word of God for many years. She is an Executive member of the Travelling Teachers Ministry. She was the "Super Platinum Winner" of the 2026 Zimbabwe CEO Network – Women In Leadership Award in the Category of "Outstanding Women of Faith and Religion." Currently working as the Deputy Registrar at the Harare Teaching and Learning Centre of ZEGU in Belvedere, Harare. Married to Archbishop Dr. Joseph Joe for 32 years.`,
       imageSrc: execNyashaProfile,
