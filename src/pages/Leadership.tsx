@@ -20,13 +20,13 @@ const leadership: { pastors: Leader[]; founders: Leader[]; executives: Leader[] 
     {
       name: "Pastor Tim Njavha",
       description:
-        "Add a short profile here: background, ministry focus, and a warm welcome message to visitors.",
+        "Pastor Tim Njavha AK LDO (Life Development officer) is an evangelistic, teacher who holds a PHD in Charismatic Leadership in biblical studies. An AMFCC graduate and had been a full time Pastor for past 25 years. A missionary by calling who has passion to see poor people changing. He holds a diploma in HIV and AIDS management and counseling, Certificate in HR management, Certificate in Leading High performing teams and A Life Certified Life Coach just to mention a few qualifications. Pastor LDO is married to pastor Magret and blessed with 4 children. Currently are excited to be regional Pastors at Westlea Region in Westgate Province",
       imageSrc: pastorTimProfile,
     },
     {
-      name: "Pastor Maggy Njavha",
+      name: "Pastor Maggie Njavha",
       description:
-        "Add a short profile here: background, ministry focus, and how she supports and leads the church community.",
+        "Pastor Maggie is an AMFCC graduate holding Certification in Christian leadership and Religious Studies. She is a business owner with strong desire to wean people from third world mentality of depending on salary. She is a teacher of the word of God and working of Talents with practical examples. Together with her husband the LDO were missionaries to Namibia, Botswana and South Africa. She had teaching in conferences powering women to be capable ladies. She is married to LDO and blessed with 4 children. They are currently regional pastors in Westgate Province.",
       imageSrc: pastorMaggyProfile,
     },
   ],
@@ -70,7 +70,7 @@ const Leadership: React.FC = () => {
         </div>
 
         <div className="glass glass-card leadership-section leadership-founder">
-          <h3 className="serif leadership-section-title">Our Founders</h3>
+          <h3 className="serif leadership-section-title">The Visionaries</h3>
           <div className="leadership-grid">
             {leadership.founders.map((founder) => (
               <article key={founder.name} className="leadership-founder-row">

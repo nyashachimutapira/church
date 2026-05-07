@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <ul className="site-footer-list">
               <li className="site-footer-contact-item">
                 <MapPin size={18} className="site-footer-accent-icon" />
-                <span>ZAOGA FIF WESTLEA CHURCH 8336 187th ST Westlea Harare</span>
+                <span>ZAOGA FIF Westlea Church 11611 Warren Park Township</span>
               </li>
               <li className="site-footer-contact-item">
                 <Phone size={18} className="site-footer-accent-icon" />

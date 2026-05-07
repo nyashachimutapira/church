@@ -54,6 +54,15 @@
   background: rgba(212, 175, 55, 0.1);
   padding: 0.8rem;
   border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.cell-group-location-text {
+  margin-left: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .cell-group-accent-icon {

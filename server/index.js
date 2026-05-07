@@ -12,7 +12,7 @@ import { createAdminToken, requireAdmin, createMemberToken, requireMember } from
 import { cellGroupFeedbackSchema, donationIntentSchema, loginSchema, registerSchema, memberLoginSchema } from "./validation.js";
 
 const app = express();
-const port = Number(process.env.API_PORT || 4000);
+const port = Number(process.env.PORT || process.env.API_PORT || 4000);
 const frontendOrigin = process.env.FRONTEND_ORIGIN || "http://localhost:5173";
 
 app.use(helmet());
@@ -332,7 +332,7 @@ app.post("/api/webhooks/paynow", async (req, res) => {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "../dist")));
-app.get("*", (req, res) => {
+app.get("*path", (req, res) => {
   res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 

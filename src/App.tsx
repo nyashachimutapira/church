@@ -8,7 +8,6 @@ import Admin from './pages/Admin';
 import CellGroups from './pages/CellGroups';
 import Welcome from './pages/Welcome';
 import Leadership from './pages/Leadership';
-import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
             <Route path="/cell-groups" element={<CellGroups />} />
             <Route path="/welcome" element={<Welcome />} />
             <Route path="/leadership" element={<Leadership />} />
-            <Route path="/login" element={<Login />} />
+
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>

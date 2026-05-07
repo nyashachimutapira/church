@@ -35,10 +35,7 @@ const Navbar: React.FC = () => {
               <User size={16} /> Dashboard
             </Link>
           ) : (
-            <>
-              <Link to="/login" className="navbar-link">Login</Link>
               <Link to="/register" className="navbar-link">Connect</Link>
-            </>
           )}
           <Link to="/give" className="btn-primary navbar-give-btn">Give Now</Link>
           <Link to="/admin" className="navbar-admin-link" title="Admin Portal">

@@ -25,12 +25,221 @@ const CellGroups: React.FC = () => {
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
   const cellGroups = [
-    { area: 'Charity Brooke 6128 Westlea', leader: 'Sister Linda', phone: '+263 771 111 222', time: 'Wednesday 19:00' },
-    { area: 'Ebeneza 6182 Westlea', leader: 'Elder Mumbiro', phone: '+263 772 333 444', time: 'Wednesday 19:00' },
-    { area: 'Joy 6394 Westlea', leader: 'Mrs Sibanda', phone: '+263 719 555 666', time: 'Wednesday 19:00' },
-    { area: 'Bloomingdale', leader: 'Evangelist Gumbo', phone: '+263 774 777 888', time: 'Thursday 18:00' },
-    { area: 'Area D / Westgate Mall', leader: 'Mrs. Kazembe', phone: '+263 783 999 000', time: 'Tuesday 17:00' },
-    { area: 'Sandton', leader: 'Mr. Maphosa', phone: '+263 775 222 333', time: 'Wednesday 18:00' },
+    {
+      area: 'Charity Brooke',
+      location: '6128 Westlea',
+      leader: 'Sister Linda',
+      phone: '+263 771 111 222',
+      time: 'Wednesday 19:00',
+      members: [
+        'Eld Mr and Mrs Chimutapira',
+        'Mrs Hunda',
+        'Str Nokutenda',
+        'Mrs Madzika',
+        'Mrs Hungwe',
+        'Str Kiki',
+        'Mrs Kamvura'
+      ]
+    },
+    {
+      area: 'Ebeneza',
+      location: '6182 Westlea',
+      leader: 'Elder Mumbiro',
+      phone: '+263 772 333 444',
+      time: 'Wednesday 19:00',
+      members: [
+        'Mrs Kanyongo',
+        'Mrs Chiwara',
+        'Sr Rutendo',
+        'St Lynnette',
+        'Br Vanie Mumbiro (C.E)'
+      ]
+    },
+    {
+      area: 'Joy',
+      location: '6394 Westlea',
+      leader: 'Mrs Sibanda',
+      phone: '+263 719 555 666',
+      time: 'Wednesday 19:00',
+      members: [
+        'Elder Chipandu',
+        'Mr and Mrs Sibanda',
+        'Sister Faith',
+        'Sister Gladys',
+        'Micky Sibanda (C.E.)'
+      ]
+    },
+    {
+      area: 'Group 3',
+      location: '6344 Westlea',
+      leader: 'Elder Gwini',
+      phone: '+263 776589293',
+      time: 'Wedensday 19:00',
+      members: [
+        'En Gwini',
+        'M. D Timbe',
+        'T Timbe',
+        'Mai Takavarasha',
+        'R Takavarasha',
+        'Mai Zvenyika',
+        'Baba Paradza',
+        'N Paradza'
+      ]
+    },
+    {
+      area: 'Group 4',
+      location: '6391 Westlea',
+      leader: 'R Salatiele',
+      phone: '+263 782516587',
+      time: 'Wednesday 19:00',
+      members: [
+        'M Takavingofa',
+        'L Nyandoro',
+        'T Nyandoro',
+        'Br Andrew'
+      ]
+    },
+    {
+      area: 'Group 5',
+      location: '6327 Westlea',
+      leader: 'R Tsanga',
+      phone: '+263 776950590',
+      time: 'Wednesday 19:00',
+      members: [
+        'M MVURA',
+        'Mai Chikakayi',
+        'Baba Chikakayi'
+      ]
+    },
+    {
+      area: 'Group 1',
+      location: '6424 Westlea',
+      leader: 'Elder Mkadhla',
+      phone: '+263 775898306',
+      time: 'Wednesday 19:00',
+      members: [
+        'M Mkandla',
+        'T Njavha',
+        'M Njavha',
+        'R Mushonga',
+        'D Mushonga'
+      ]
+    },
+    {
+      area: 'Group 2',
+      location: '6444 Westlea',
+      leader: 'Elder P Karikoga',
+      phone: '+263 775618418',
+      time: 'Wednesday 19:00',
+      members: [
+        'T Karikoga',
+        'C Mushonga',
+        'E Antonio',
+        'L Antonio',
+        'H Mushonga'
+      ]
+    },
+    {
+      area: 'Kaizen',
+      location: '6228 Westlea',
+      leader: 'L Matizanadzo',
+      phone: '+263772958167',
+      time: 'Wednesday 19:00',
+      members: [
+        'Le Matizanadzo',
+        'C Matizanadzo',
+        'P Makuvatsine',
+        'F Makuvatsine',
+        'Mai Goromonzi',
+        'Mai Magura',
+        'Br Ronnie'
+      ]
+    },
+    {
+      area: 'Group 7',
+      leader: 'C Momberume',
+      phone: '=263 779689698',
+      time: 'Wednesday 19:00',
+      members: [
+        'J Momberume',
+        'Baba Chakawa',
+        'Mai Chakawa',
+        'Mai Ossie',
+        'Sis Polite Jacob'
+      ]
+    },
+    {
+      area: 'Group 8',
+      location: '10069 Westlea',
+      leader: 'Mai Manyeruke',
+      phone: '+263 775497428',
+      time: 'Wednesday 19:00',
+      members: [
+        'Mai Chikada',
+        'Baba Madondo',
+        'Mai Madondo',
+        'Lo Manyeruke'
+      ]
+    },
+    {
+      area: 'Group 9',
+      leader: 'S Shamhu',
+      phone: '+263 773 799 701',
+      time: 'Wednesday 19:00',
+      members: [
+        'Mai Karuma',
+        'Baba Monday',
+        'Mai Monday'
+      ]
+    },
+    {
+      area: 'Elishadai',
+      leader: 'Mai Chimhete',
+      phone: '0772648080',
+      time: 'Wednesday 19:00',
+      members: [
+        'Charle family',
+        'Museva family',
+        'Machona family'
+      ]
+    },
+    {
+      area: 'Group',
+      leader: 'Mai Kabara',
+      phone: '0774350548',
+      time: 'Wednesday 19:00',
+      members: [
+        'Muunde family',
+        'Dube family',
+        'Hlabiso family',
+        'Munyuki family',
+        'Dube 2 family',
+        'Sami family'
+      ]
+    },
+    {
+      area: 'Group',
+      leader: 'Mai Mandaza',
+      phone: '0773761696',
+      time: 'Wednesday 19:00',
+      members: [
+        'Gwezere family',
+        'Makava family',
+        'Siste Mupfundirwa',
+        'Dimbi family',
+        'Afiki family'
+      ]
+    },
+    {
+      area: 'Group',
+      leader: 'Jena family',
+      phone: '+263783219673',
+      time: 'Wednesday 19:00',
+      members: [
+        'Chimusasa',
+        'Matiyenga family'
+      ]
+    },
   ];
 
   const filteredGroups = cellGroups.filter(g =>
@@ -116,6 +325,7 @@ const CellGroups: React.FC = () => {
               <div className="cell-group-card-top">
                 <div className="cell-group-location-icon-wrap">
                   <MapPin size={24} className="cell-group-accent-icon" />
+                  {group.location && <span className="cell-group-location-text">{group.location}</span>}
                 </div>
                 <div className="cell-group-time-pill">
                   {group.time}
@@ -131,6 +341,16 @@ const CellGroups: React.FC = () => {
                 <div className="cell-group-detail-item">
                   <Phone size={18} /> <span>{group.phone}</span>
                 </div>
+                {group.members && (
+                  <div className="cell-group-members-list" style={{ marginTop: '10px', fontSize: '0.9em', color: 'rgba(255, 255, 255, 0.7)' }}>
+                    <div style={{ marginBottom: '4px', fontWeight: 'bold' }}>Members:</div>
+                    <ul style={{ listStyleType: 'disc', paddingLeft: '20px', margin: 0 }}>
+                      {group.members.map((member, i) => (
+                        <li key={i}>{member}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
 
               <button
